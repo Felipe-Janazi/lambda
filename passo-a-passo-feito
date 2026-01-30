@@ -1,0 +1,13 @@
+utilização do 
+    cdk init --language typescript
+Para inicializar o repositorio da linguagem
+
+Instalação de novas bibliotecas
+    npm install aws-sdk @types/aws-lambda @types/uuid --save-dev
+Aws lambda para a criação de lambda functions e o uuid para criação de numeros uuid aleatorios e a aws sdk
+
+Comandos uteis do cdk
+    cdk deploy --all
+    cdk destroi --all
+    cdk diff
+    cdk list
