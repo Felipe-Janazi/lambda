@@ -1,3 +1,5 @@
+Primeiro realizar a criação de um usuario na AWS e configurar ele junto ao terminal
+
 utilização do 
     cdk init --language typescript
 Para inicializar o repositorio da linguagem
@@ -11,3 +13,20 @@ Comandos uteis do cdk
     cdk destroi --all
     cdk diff
     cdk list
+
+EM CASO DE NODE VERSÃO 20+
+    Para utilizar o NodeJS versão 20.x, faça duas alterações em todas as funções Lambda que for criar durante esse curso. As duas alterações são:
+    runtime: lambda.Runtime.NODEJS_20_X
+    memorySize: 512
+
+Comando para fazer a criação da infraestrutura que vamos usuar
+    cdk bootstrap
+Cria por exemplo, um bucket, iam e etc
+
+Após o bootstrap usamos o 
+    cdk list 
+Para listagem de todas as stacks do projeto
+
+Após isso 
+    cdk deploy --all
+Para subir todas as stacks criadas
