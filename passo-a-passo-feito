@@ -10,6 +10,7 @@ Aws lambda para a criação de lambda functions e o uuid para criação de numer
 
 Comandos uteis do cdk
     cdk deploy --all
+    cdk deploy --all --require-approval never
     cdk destroi --all
     cdk diff
     cdk list
@@ -30,3 +31,7 @@ Para listagem de todas as stacks do projeto
 Após isso 
     cdk deploy --all
 Para subir todas as stacks criadas
+
+Para realizar a destruição
+    cdk destroy --all
+Assim retirando tudo que foi criado, mas precisa ir manualmente e deletar os logs do cloudwatch logs
