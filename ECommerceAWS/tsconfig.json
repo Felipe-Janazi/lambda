@@ -24,6 +24,12 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
+    "baseUrl": "./",
+    "paths": {
+      "/opt/nodejs/productsLayer": [
+        "lambda/products/layers/productsLayer/nodejs/productRepository"
+      ]
+    },
     "types": ["node", "jest", "aws-lambda"]
   },
   "exclude": [
